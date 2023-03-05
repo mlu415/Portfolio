@@ -8,9 +8,10 @@ const Home = () => {
     <div className="container home-page">
       <div className="text-zone">
         <h1>
-          Hi, <br /> I'm
-          <img src={LogoS} alt="name" />
-          ichelle
+          Hi, <br />
+          {/* I'm */}
+          {/* <img src={LogoS} alt="name" /> */}
+          I'm Michelle
           <br />
           Web Developer
         </h1>
