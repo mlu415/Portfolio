@@ -1,7 +1,6 @@
 import "./index.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-import { Link } from "react-router-dom";
+import { faPuzzlePiece } from "@fortawesome/free-solid-svg-icons";
 
 const About = () => {
   return (
@@ -16,8 +15,7 @@ const About = () => {
         <p>
           Im a highly ambitious, quick learner with an extroverted personality.
           I love all things puzzle related! The tougher the problem the more
-          rewarding it is to solve{" "}
-          <FontAwesomeIcon icon="fa-duotone fa-puzzle-piece" />
+          rewarding it is to solve <FontAwesomeIcon icon={faPuzzlePiece} />
         </p>
         <p>
           In my free time, I enjoy coding, homebrewing, and hiking, as well as
