@@ -38,9 +38,9 @@
     animation-delay: 1s;
   }
 
+  .container.project-page,
   .container.contact-page,
-  .container.about-page,
-  .container.project-page{
+  .container.about-page{
     .text-zone {
       position: absolute;
       left: 10%;
@@ -50,6 +50,7 @@
       vertical-align: middle;
       display: table-cell;
       max-height: 90%;
+      justify-content: space-between;
     }
     h1 {
       font-size: 53px;
