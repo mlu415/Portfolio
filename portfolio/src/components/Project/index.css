@@ -17,7 +17,7 @@
   right: 0;
   overflow: hidden;
   transform-style: preserve-3d;
-  animation: fadeIn 2s forwards;
+  animation: fadeIn 1s forwards;
   animation-delay: 1s;
 }
 
@@ -45,8 +45,8 @@ img {
   align-items: center;
   margin-top: 5em;
   z-index: 2;
-  -webkit-animation: fadeIn 1.5s ease-in both;
-  animation: fadeIn 1.5s ease-in both;
+  /* -webkit-animation: fadeIn 1.5s ease-in both;
+  animation: fadeIn 1.5s ease-in both; */
 }
 
 .project-display {
@@ -110,8 +110,8 @@ img {
   bottom: 0;
   left: 0;
   background-color: var(--bg-primary);
-  transform-origin: bottom right;
-  transition: transform 0.2s ease-out;
+  /* transform-origin: bottom right;
+  transition: transform 0.2s ease-out; */
 }
 .project-links>a:hover:after {
   transform: scaleX(1);
@@ -145,8 +145,8 @@ img {
   display: flex;
   z-index: 2;
   gap: 1em;
-  -webkit-animation: fadeIn 1.5s ease-in both;
-  animation: fadeIn 1.5s ease-in both;
+  /* -webkit-animation: fadeIn 1.5s ease-in both;
+  animation: fadeIn 1.5s ease-in both; */
 }
 
 .projects-nav>div {
@@ -163,64 +163,8 @@ img {
   align-self: flex-end;
   height: 100vh;
   background-color: var(--bg-secondary);
-  -webkit-animation: slide-in 1s cubic-bezier(0.175, 0.885, 0.320, 1) both;
-  animation: slide-in 1s cubic-bezier(0.175, 0.885, 0.320, 1) both;
+  /* -webkit-animation: slide-in 1s cubic-bezier(0.175, 0.885, 0.320, 1) both;
+  animation: slide-in 1s cubic-bezier(0.175, 0.885, 0.320, 1) both; */
 }
 
-/**
-* ----------------------------------------
-* animation slide-in
-* ----------------------------------------
-*/
-@-webkit-keyframes slide-in {
-  0% {
-      width: 0;
-  }
 
-  100% {
-      width: 80vw;
-  }
-}
-
-@keyframes slide-in {
-  0% {
-      width: 0;
-  }
-
-  100% {
-      width: 80vw;
-  }
-}
-
-/**
-* ----------------------------------------
-* animation fadeIn
-* ----------------------------------------
-*/
-@-webkit-keyframes fadeIn {
-  0% {
-      opacity: 0;
-  }
-
-  60% {
-      opacity: 0;
-  }
-
-  100% {
-      opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-      opacity: 0;
-  }
-
-  60% {
-      opacity: 0;
-  }
-
-  100% {
-      opacity: 1;
-  }
-}
