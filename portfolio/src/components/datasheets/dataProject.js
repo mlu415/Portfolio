@@ -5,9 +5,9 @@ const projectData = [
     title: "UNIHACK",
     tech: ["JavaScript", "React", "Next.js", "Postgres", "Docker"],
     description:
-      "UNIHACK's team management app for over 400 participants. This included Discord & Twilio Integration, DB schema updates & migration, and User Reports.",
+      "UNIHACK's team management app for over 400 participants. This included Discord & Twilio Integration, DB schema updates & migration, and User Reports. No source code for this one sorry!",
     image: unihackImg,
-    sourceCode: "Confidential",
+    sourceCode: "",
     demo: "https://manage.unihack.net/",
   },
   {

@@ -15,8 +15,8 @@ const Project = () => {
 
         <h2>{dataProject[currentIndex].title}</h2>
 
-        <ul className="demo-src">
-          <li>
+        <ul>
+          <li className="demo-src">
             {" "}
             <a
               href={dataProject[currentIndex].demo}
@@ -26,7 +26,7 @@ const Project = () => {
               Demo
             </a>
           </li>
-          <li>
+          <li className="demo-src">
             <a
               href={dataProject[currentIndex].sourceCode}
               target="_blank"
@@ -42,7 +42,7 @@ const Project = () => {
         </p>
         <ul className="project-tech">
           {dataProject[currentIndex].tech.map((tech, techIndex) => (
-            <li>{tech}</li>
+            <li className="tech">{tech}</li>
           ))}
         </ul>
       </div>

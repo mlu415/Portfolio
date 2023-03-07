@@ -27,7 +27,7 @@ ul {
   padding: 0;
 }
 
-li {
+.tech {
   list-style-type: none;
   color: #444;
   display: inline;
@@ -38,6 +38,40 @@ li {
   padding-right: 1em;
   border-radius: 2em;
 }
+
+.demo-src{
+  list-style-type: none;
+  color: #ffd700;
+  display: inline;
+  background-color: #444;
+  width: min-content;
+  padding: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  border-radius: 2em;
+}
+
+a {
+  color: white;
+  margin-top: 20px;
+  animation: pulse 1s;
+  animation-delay: 1s;
+  position: relative;
+  margin-top: 0;
+}
+
+  a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--bg-primary);
+    transform-origin: bottom right;
+    transition: transform 0.2s ease-out;
+  }
 
 
 
