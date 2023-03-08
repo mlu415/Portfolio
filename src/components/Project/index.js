@@ -8,13 +8,12 @@ const Project = () => {
   const goToProject = (projectIndex) => {
     setCurrentIndex(projectIndex);
   };
+
   return (
     <div className="container project-page">
       <div className="text-zone">
         <h1>Project</h1>
-
         <h2>{dataProject[currentIndex].title}</h2>
-
         <ul>
           <li className="demo-src">
             {" "}
@@ -36,15 +35,26 @@ const Project = () => {
             </a>
           </li>
         </ul>
-
         <p className="project-description">
           {dataProject[currentIndex].description}
         </p>
-        <ul className="project-tech">
-          {dataProject[currentIndex].tech.map((tech, techIndex) => (
-            <li className="tech">{tech}</li>
+        <div className="container-tech">
+          <ul className="project-tech">
+            {dataProject[currentIndex].tech.map((tech, techIndex) => (
+              <li className="tech">{tech}</li>
+            ))}
+          </ul>
+        </div>
+        {""}
+        <div className="projects-nav">
+          {dataProject.map((project, projectIndex) => (
+            <span
+              class="dot"
+              onClick={() => goToProject(projectIndex)}
+              key={projectIndex}
+            ></span>
           ))}
-        </ul>
+        </div>{" "}
       </div>
       <div className="project-right">
         <div className="container-img">
