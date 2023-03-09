@@ -18,6 +18,11 @@
 
 .container-img{
   text-align: center;
+
+  img{
+    height: 300px;
+    width: auto;
+  }
 }
 
 .container-tech{
@@ -85,6 +90,7 @@ a {
     transform-origin: bottom right;
     transition: transform 0.2s ease-out;
   }
+
 
 
   .dot {

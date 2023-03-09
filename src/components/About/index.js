@@ -1,4 +1,5 @@
 import "./index.scss";
+import rocketMoon from "../../assets/images/rocket2.gif";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPuzzlePiece } from "@fortawesome/free-solid-svg-icons";
 
@@ -22,6 +23,11 @@ const About = () => {
           participating in events such as the Wonder Project, which brings STEM
           education to local schools.
         </p>
+      </div>
+      <div className="project-right">
+        <div className="container-img">
+          <img src={rocketMoon} alt="rocket and moon"></img>
+        </div>
       </div>
     </div>
   );

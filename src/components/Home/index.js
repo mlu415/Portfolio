@@ -1,6 +1,5 @@
 import "./index.scss";
-import LogoS from "../../assets/images/logo-s.png";
-import LogoSubtitle from "../../assets/images/logo_sub.png";
+import rocketMan from "../../assets/images/rocket.gif";
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -13,12 +12,14 @@ const Home = () => {
           {/* <img src={LogoS} alt="name" /> */}
           I'm Michelle
           <br />
-          Web Developer
+          Software Engineering Student
         </h1>
-        <h2>Software Engineering Student</h2>
-        <Link to="/contact" className="flat-button">
-          Contact Me
-        </Link>
+        <h2>University of Auckland</h2>
+      </div>
+      <div className="project-right">
+        <div className="container-img">
+          <img src={rocketMan} alt="rocket"></img>
+        </div>
       </div>
     </div>
   );
